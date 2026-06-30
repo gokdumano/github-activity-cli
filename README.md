@@ -53,7 +53,7 @@ $ ./github-activity-cli.sh gokdumano
 ## Install
 
 ```bash
-git clone https://github.com/<you>/github-activity-cli.git
+git clone https://github.com/gokdumano/github-activity-cli.git
 cd github-activity-cli
 chmod +x github-activity.sh
 ```
