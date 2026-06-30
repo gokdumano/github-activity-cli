@@ -99,6 +99,7 @@ function github_user_activity {
     )
  
     [ -s "$etag_file" ] && args+=(--header "If-None-Match: $(<"$etag_file")")
+    #   [ -n "${GITHUB_TOKEN:-}" ] && args+=(--header "Authorization: Bearer ${GITHUB_TOKEN}")
     
     local response_code
     response_code=$(curl "${args[@]}" "https://api.github.com/users/${username}/events")
